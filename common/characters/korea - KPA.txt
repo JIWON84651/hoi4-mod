@@ -1,0 +1,11 @@
+characters = {
+	KPA_ECMC = {
+		name = KPA_ECMC
+		portraits = { civilian = { large = "gfx/leaders/KPA/Portrait_ECMC.dds" } }
+		country_leader = {
+			desc = "POLITICS_ECMC_DESC"
+			ideology = communist_national_communism_subtype
+			expire = "1999.1.1.1"
+		}
+	}
+}

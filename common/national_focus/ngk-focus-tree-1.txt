@@ -1,0 +1,175 @@
+focus_tree = {
+	id = ngk-focus-tree-1
+	continuous_focus_position = { x = -40 y = 1050 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NGK
+		}
+	}
+	#preparation for a coup
+	focus = {
+		id = NGK_preparation_for_a_coup
+		icon = GFX_NGK_preparation_for_a_coup-293238
+		x = 2
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NGK_got_up_with_a_gun  }
+	}
+
+	#Gwangju is...
+	focus = {
+		id = NGK_gwangjuis
+		icon = GFX_NGK_gwangjuis-293228
+		x = 3
+		y = 0
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			country_event = ngk.1
+		}
+	}
+
+	#got up with a gun
+	focus = {
+		id = NGK_got_up_with_a_gun
+		icon = GFX_NGK_got_up_with_a_gun-293230
+		x = 1
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = { 
+			focus = NGK_itsaprodemocracyprotest  
+		}
+		prerequisite = { focus = NGK_gwangjuis  }
+	}
+
+	#It's a pro-democracy protest
+	focus = {
+		id = NGK_itsaprodemocracyprotest
+		icon = GFX_NGK_itsaprodemocracyprotest-293233
+		x = 5
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = { 
+			focus = NGK_got_up_with_a_gun  
+		}
+		prerequisite = { focus = NGK_gwangjuis  }
+	}
+
+	#Because he's a martial law army
+	focus = {
+		id = NGK_becausehesamartiallawarmy
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		x = 1
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NGK_one_of_those_riots  }
+	}
+
+	#progress in democracy
+	focus = {
+		id = NGK_progress_in_democracy
+		icon = GFX_NGK_progress_in_democracy-427
+		x = 5
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NGK_completion_of_the_consultation  }
+	}
+
+	#preparation for martial law
+	focus = {
+		id = NGK_preparation_for_martial_law
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NGK_got_up_with_a_gun  }
+	}
+
+	#one of those riots
+	focus = {
+		id = NGK_one_of_those_riots
+		icon = GFX_NGK_one_of_those_riots-293239
+		x = 1
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NGK_preparation_for_martial_law  } prerequisite = { focus = NGK_preparation_for_a_coup  }
+	}
+
+	#citizen-led
+	focus = {
+		id = NGK_citizenled
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 4
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NGK_itsaprodemocracyprotest  }
+	}
+
+	#promise to fulfill democracy
+	focus = {
+		id = NGK_promise_to_fulfill_democracy
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 6
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NGK_itsaprodemocracyprotest  }
+	}
+
+	#Completion of the consultation
+	focus = {
+		id = NGK_completion_of_the_consultation
+		icon = GFX_focus_generic_treaty
+		x = 5
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NGK_citizenled  } prerequisite = { focus = NGK_promise_to_fulfill_democracy  }
+	}
+
+	#end of the Gwangju crisis
+	focus = {
+		id = NGK_end_of_the_gwangju_crisis
+		icon = GFX_focus_rom_parties_end
+		x = 3
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NGK_progress_in_democracy  focus = NGK_becausehesamartiallawarmy  }
+	}
+
+}

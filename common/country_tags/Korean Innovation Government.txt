@@ -1,0 +1,1 @@
+KIG	= "countries/Korean Innovation Government.txt"
