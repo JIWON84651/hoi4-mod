@@ -1,0 +1,32 @@
+add_namespace = ngk_events
+
+#국민정부 치안본부 긴급 보고 3-1451-12호
+country_event = {
+	id = ngk_events.1
+	title = ngk_events.1.t
+	desc = ngk_events.1.d
+
+	picture = 3145112-1
+	option = {
+		name = ngk_events.1.a
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		complete_national_focus = NGK_got_up_with_a_gun
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = ngk_events.1.b
+		trigger = {
+			
+		}
+		ai_chance = { factor = 1 }
+		complete_national_focus = NGK_itsaprodemocracyprotest
+		hidden_effect = {
+			
+		}
+	}
+}
