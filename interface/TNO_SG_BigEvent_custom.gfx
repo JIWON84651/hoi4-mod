@@ -1,0 +1,11 @@
+spriteTypes = {
+
+    spriteType = { 
+
+        name = "GFX_superevent_custom"
+
+        textureFile = "gfx//superevent_pictures//custom.tga"
+
+    } 
+
+}

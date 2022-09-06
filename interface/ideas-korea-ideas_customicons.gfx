@@ -1,0 +1,39 @@
+spriteTypes = { 
+	##Icon For: Provisional Government of Korea
+	SpriteType = { 
+		name = "GFX_idea_provisional_government_of_korea-1"
+		texturefile = "gfx/interface/ideas/korea-ideas-ideas/provisional_government_of_korea-1.dds"
+	}
+
+	##Icon For: dawn of democracy
+	SpriteType = { 
+		name = "GFX_idea_dawn_of_democracy-303481"
+		texturefile = "gfx/interface/ideas/korea-ideas-ideas/dawn_of_democracy-303481.dds"
+	}
+
+	##Icon For: Mill protest
+	SpriteType = { 
+		name = "GFX_idea_mill_protest-303445"
+		texturefile = "gfx/interface/ideas/korea-ideas-ideas/mill_protest-303445.dds"
+	}
+
+	##Icon For: promise of democracy
+	SpriteType = { 
+		name = "GFX_idea_promise_of_democracy-303473"
+		texturefile = "gfx/interface/ideas/korea-ideas-ideas/promise_of_democracy-303473.dds"
+	}
+
+	##Icon For: kill them all
+	SpriteType = { 
+		name = "GFX_idea_kill_them_all-303476"
+		texturefile = "gfx/interface/ideas/korea-ideas-ideas/kill_them_all-303476.dds"
+	}
+
+	##Icon For: Gwangju Democratization Movement
+	SpriteType = { 
+		name = "GFX_idea_gwangju_democratization_movement-303436"
+		texturefile = "gfx/interface/ideas/korea-ideas-ideas/gwangju_democratization_movement-303436.dds"
+	}
+
+ 
+ }

@@ -1,0 +1,11 @@
+spriteTypes = {
+
+        frameAnimatedSpriteType = {
+		name = "GFX_big_sis_anim"
+		texturefile = "gfx/leaders/ROK/big_sis_anim.tga"
+                noOfFrames = 38
+                animation_rate_fps = 12
+                looping = yes
+                play_on_show = yes
+	}
+}

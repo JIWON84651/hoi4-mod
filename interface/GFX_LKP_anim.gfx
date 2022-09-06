@@ -1,0 +1,11 @@
+spriteTypes = {
+
+        frameAnimatedSpriteType = {
+		name = "GFX_LKP_anim"
+		texturefile = "gfx/leaders/ROK/GFX_LKP_anim.tga"
+                noOfFrames = 50
+                animation_rate_fps = 10
+                looping = yes
+                play_on_show = yes
+	}
+}
