@@ -1,0 +1,12 @@
+characters = {
+	KIG_KJP = {
+		name = KIG_KJP
+		portraits = { civilian = { large = "gfx/leaders/KIG/Kim-Jong-pil.dds" } }
+		country_leader = {
+			desc = "POLITICS_KJP_DESC"
+			ideology = authoritarian_democracy_controlled_democracy_subtype
+			traits = {  }
+			expire = "1999.1.1.1"
+		}
+	}
+}

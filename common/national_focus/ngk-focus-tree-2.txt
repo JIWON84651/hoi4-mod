@@ -1,0 +1,607 @@
+focus_tree = {
+	id = ngk-focus-tree-2
+	continuous_focus_position = { x = -40 y = 1830 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NGK
+		}
+	}
+	#condemnation of the government's weak measures
+	focus = {
+		id = NGK_condemnationofthegovernmentsweakmeasures
+		icon = GFX_goal_unknown
+		x = 0
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NGK_the_gwangju_crisis  }
+		mutually_exclusive = { focus = NGK_condemnation_of_the_use_of_force  }
+	}
+
+	#new competition
+	focus = {
+		id = NGK_new_competition
+		icon = GFX_goal_generic_major_war
+		x = 11
+		y = 0
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#the Gwangju crisis
+	focus = {
+		id = NGK_the_gwangju_crisis
+		icon = GFX_goal_continuous_suppression
+		x = 1
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NGK_new_competition  }
+	}
+
+	#condemnation of the use of force
+	focus = {
+		id = NGK_condemnation_of_the_use_of_force
+		icon = GFX_NGK_condemnation_of_the_use_of_force-262075
+		x = 2
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NGK_the_gwangju_crisis  }
+	}
+
+	#Pesticulation against pollution?
+	focus = {
+		id = NGK_pesticulationagainstpollution
+		icon = GFX_goal_unknown
+		x = 10
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NGK_social_safety  }
+	}
+
+	#raking money together
+	focus = {
+		id = NGK_raking_money_together
+		icon = GFX_goal_unknown
+		x = 6
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NGK_remains_of_japan  } prerequisite = { focus = NGK_shipyard_repair  }
+	}
+
+	#Avoiding the damage
+	focus = {
+		id = NGK_avoiding_the_damage
+		icon = GFX_goal_unknown
+		x = 1
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NGK_condemnation_of_the_use_of_force  focus = NGK_condemnationofthegovernmentsweakmeasures  }
+	}
+
+	#National Security Law
+	focus = {
+		id = NGK_national_security_law
+		icon = GFX_goal_unknown
+		x = 0
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NGK_avoiding_the_damage  }
+		mutually_exclusive = { focus = NGK_special_act_on_investigation_of_oversuppression  }
+		available = {
+			has_completed_focus = fail_to_pass_a_bill
+			
+			
+		}
+	}
+
+	#Special Act on Investigation of Oversuppression
+	focus = {
+		id = NGK_special_act_on_investigation_of_oversuppression
+		icon = GFX_goal_unknown
+		x = 2
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NGK_avoiding_the_damage  }
+		mutually_exclusive = { focus = NGK_national_security_law  }
+		available = {
+			has_completed_focus = Bill_Is_Passed!
+			
+			
+		}
+	}
+
+	#front of a bayonet
+	focus = {
+		id = NGK_front_of_a_bayonet
+		icon = GFX_goal_unknown
+		x = 0
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NGK_national_security_law  }
+	}
+
+	#Preparation for establishment of "Emergency Administration"
+	focus = {
+		id = NGK_preparationforestablishmentofemergencyadministration
+		icon = GFX_goal_unknown
+		x = 0
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NGK_front_of_a_bayonet  }
+	}
+
+	#check military influence
+	focus = {
+		id = NGK_check_military_influence
+		icon = GFX_goal_unknown
+		x = 2
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NGK_special_act_on_investigation_of_oversuppression  }
+	}
+
+	#reorganization of investigative agencies
+	focus = {
+		id = NGK_reorganization_of_investigative_agencies
+		icon = GFX_goal_unknown
+		x = 2
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NGK_check_military_influence  }
+	}
+
+	#Let's wait for the results...
+	focus = {
+		id = NGK_letswaitfortheresults
+		icon = GFX_goal_unknown
+		x = 1
+		y = 8
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NGK_reorganization_of_investigative_agencies  focus = NGK_preparationforestablishmentofemergencyadministration  }
+	}
+
+	#appointment is approaching
+	focus = {
+		id = NGK_appointment_is_approaching
+		icon = GFX_goal_unknown
+		x = 15
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NGK_new_competition  }
+	}
+
+	#on the hard road
+	focus = {
+		id = NGK_on_the_hard_road
+		icon = GFX_goal_unknown
+		x = 15
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NGK_appointment_is_approaching  }
+	}
+
+	#Economic Problem
+	focus = {
+		id = NGK_economic_problem
+		icon = GFX_goal_unknown
+		x = 6
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NGK_on_the_hard_road  }
+	}
+
+	#Remains of Japan
+	focus = {
+		id = NGK_remains_of_japan
+		icon = GFX_goal_unknown
+		x = 5
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NGK_economic_problem  }
+	}
+
+	#shipyard repair
+	focus = {
+		id = NGK_shipyard_repair
+		icon = GFX_goal_unknown
+		x = 9
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NGK_economic_problem  }
+	}
+
+	#social problem
+	focus = {
+		id = NGK_social_problem
+		icon = GFX_goal_unknown
+		x = 18
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NGK_on_the_hard_road  }
+	}
+
+	#social safety
+	focus = {
+		id = NGK_social_safety
+		icon = GFX_goal_unknown
+		x = 17
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NGK_social_problem  }
+	}
+
+	#Social welfare
+	focus = {
+		id = NGK_social_welfare
+		icon = GFX_goal_unknown
+		x = 19
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NGK_social_problem  }
+	}
+
+	#drafting of a labor safety law
+	focus = {
+		id = NGK_drafting_of_a_labor_safety_law
+		icon = GFX_goal_unknown
+		x = 14
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NGK_social_safety  }
+	}
+
+	#Find an agreement between
+	focus = {
+		id = NGK_find_an_agreement_between
+		icon = GFX_goal_unknown
+		x = 10
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NGK_pesticulationagainstpollution  }
+	}
+
+	#order not to damage the industry
+	focus = {
+		id = NGK_order_not_to_damage_the_industry
+		icon = GFX_goal_unknown
+		x = 10
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NGK_find_an_agreement_between  }
+	}
+
+	#meeting with entrepreneurs
+	focus = {
+		id = NGK_meeting_with_entrepreneurs
+		icon = GFX_goal_unknown
+		x = 22
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NGK_social_welfare  }
+	}
+
+	#Redistribution of wealth?
+	focus = {
+		id = NGK_redistributionofwealth
+		icon = GFX_goal_unknown
+		x = 22
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NGK_social_welfare  }
+	}
+
+	#preparation of a bill
+	focus = {
+		id = NGK_preparation_of_a_bill
+		icon = GFX_goal_unknown
+		x = 14
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NGK_drafting_of_a_labor_safety_law  }
+	}
+
+	#budget plan modification
+	focus = {
+		id = NGK_budget_plan_modification
+		icon = GFX_goal_unknown
+		x = 14
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NGK_preparation_of_a_bill  }
+	}
+
+	#safe labor
+	focus = {
+		id = NGK_safe_labor
+		icon = GFX_goal_unknown
+		x = 13
+		y = 8
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NGK_budget_plan_modification  } prerequisite = { focus = NGK_order_not_to_damage_the_industry  }
+	}
+
+	#people's livelihood law
+	focus = {
+		id = NGK_peopleslivelihoodlaw
+		icon = GFX_NGK_peopleslivelihoodlaw-303621
+		x = 18
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NGK_social_safety  } prerequisite = { focus = NGK_social_welfare  }
+	}
+
+	#compromise?
+	focus = {
+		id = NGK_compromise
+		icon = GFX_NGK_compromise-303659
+		x = 17
+		y = 6
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NGK_peopleslivelihoodlaw  }
+	}
+
+	#There is no compromise
+	focus = {
+		id = NGK_there_is_no_compromise
+		icon = GFX_NGK_there_is_no_compromise-303683
+		x = 19
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NGK_peopleslivelihoodlaw  }
+		mutually_exclusive = { focus = NGK_compromise  }
+	}
+
+	#What way do we have to go?
+	focus = {
+		id = NGK_whatwaydowehavetogo
+		icon = GFX_goal_unknown
+		x = 18
+		y = 7
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NGK_there_is_no_compromise  focus = NGK_compromise  }
+	}
+
+	#long discussion...
+	focus = {
+		id = NGK_longdiscussion
+		icon = GFX_NGK_longdiscussion-303694
+		x = 18
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NGK_whatwaydowehavetogo  }
+	}
+
+	#agricultural sector
+	focus = {
+		id = NGK_agricultural_sector
+		icon = GFX_NGK_agricultural_sector-303695
+		x = 14
+		y = 10
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NGK_longdiscussion  }
+	}
+
+	#industrial sector
+	focus = {
+		id = NGK_industrial_sector
+		icon = GFX_NGK_industrial_sector-303699
+		x = 16
+		y = 10
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NGK_longdiscussion  }
+	}
+
+	#economic sector
+	focus = {
+		id = NGK_economic_sector
+		icon = GFX_NGK_economic_sector-303710
+		x = 18
+		y = 10
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NGK_longdiscussion  }
+	}
+
+	#security sector
+	focus = {
+		id = NGK_security_sector
+		icon = GFX_NGK_security_sector-303711
+		x = 20
+		y = 10
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NGK_longdiscussion  }
+	}
+
+	#political sector
+	focus = {
+		id = NGK_political_sector
+		icon = GFX_NGK_political_sector-303716
+		x = 22
+		y = 10
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NGK_longdiscussion  }
+	}
+
+	#Waiting for results
+	focus = {
+		id = NGK_waiting_for_results
+		icon = GFX_NGK_waiting_for_results-303720
+		x = 18
+		y = 11
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NGK_longdiscussion  } prerequisite = { focus = NGK_agricultural_sector  } prerequisite = { focus = NGK_industrial_sector  } prerequisite = { focus = NGK_economic_sector  } prerequisite = { focus = NGK_security_sector  } prerequisite = { focus = NGK_political_sector  }
+	}
+
+	#administrative processing
+	focus = {
+		id = NGK_administrative_processing
+		icon = GFX_NGK_administrative_processing-304079
+		x = 18
+		y = 13
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NGK_fail_to_pass_a_bill  focus = NGK_billispassed  }
+	}
+
+	#Bill Is Passed!
+	focus = {
+		id = NGK_billispassed
+		icon = GFX_NGK_billispassed-303725
+		x = 17
+		y = 12
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = NGK_waiting_for_results  }
+		mutually_exclusive = { focus = NGK_fail_to_pass_a_bill  }
+		completion_reward = {
+			add_popularity = {
+			    ideology = social_democracy
+			    popularity = 0.1
+			}
+			add_popularity = {
+			    ideology = liberal_democracy
+			    popularity = 0.05
+			}
+		}
+	}
+
+	#fail to pass a bill
+	focus = {
+		id = NGK_fail_to_pass_a_bill
+		icon = GFX_NGK_fail_to_pass_a_bill-303727
+		x = 19
+		y = 12
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = NGK_waiting_for_results  }
+		mutually_exclusive = { focus = NGK_billispassed  }
+	}
+
+}

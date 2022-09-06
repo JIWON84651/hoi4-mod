@@ -1,0 +1,65 @@
+ideas = {
+	country = {
+
+		provisional_government_of_korea = {
+			picture = provisional_government_of_korea-1
+		}
+
+		dawn_of_democracy = {
+			picture = dawn_of_democracy-303481
+			modifier = {
+				stability_factor = 0.3
+political_power_gain = 1
+conservative_democracy_drift = 0.003liberal_democracy_drift = 0.003social_democracy_drift = 0.003
+
+
+			}
+		}
+
+		mill_protest = {
+			picture = mill_protest-303445
+			modifier = {
+				stability_weekly = -0.002
+war_support_weekly = 0.001
+army_attack_factor = -0.05
+army_defence_factor = -0.05
+
+			}
+		}
+
+		promise_of_democracy = {
+			picture = promise_of_democracy-303473
+			modifier = {
+				stability_weekly = 0.001
+war_support_weekly = -0.003
+			}
+		}
+
+		kill_them_all = {
+			picture = kill_them_all-303476
+			modifier = {
+				stability_factor = -0.3
+war_support_factor = 0.3
+army_defence_factor = 0.1
+army_attack_factor = 0.1
+weekly_manpower = -100
+
+			}
+		}
+
+		gwangju_democratization_movement = {
+			picture = gwangju_democratization_movement-303436
+			modifier = {
+				stability_weekly = -0.005
+
+war_support_weekly = -0.005
+
+army_attack_factor = -0.7
+
+army_defence_factor = -0.7
+
+
+			}
+		}
+	}
+}

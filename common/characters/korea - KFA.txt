@@ -1,0 +1,16 @@
+characters = {
+	KFA_KY = {
+		name = KFA_KY
+		portraits = {
+			civilian = { 
+				large = "gfx/leaders/KFA/Kozuki Yoshio.dds" 
+			} 
+		}
+		country_leader = {
+			desc = "POLITICS_KFA_DESC"
+			ideology = national_socialism_stratocratic_nazism_subtype
+			traits = {  }
+			expire = "1999.1.1.1"
+		}
+	}
+}

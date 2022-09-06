@@ -1,0 +1,119 @@
+characters = {
+	ROK_ISM = {
+		name = ROK_ISM
+		portraits = { 
+			civilian = { 
+				large = "gfx/leaders/ROK/Rhee-Syng-man.dds" 
+			} 
+		}
+		country_leader = {
+			desc = "POLITICS_RSM_DESC"
+			ideology = authoritarian_democracy_controlled_democracy_subtype
+			traits = {  }
+			expire = "1999.1.1.1"
+		}
+	}
+	ROK_LKP = {
+		name = ROK_LKP
+		portraits = { 
+			civilian = { 
+				large = "gfx/leaders/ROK/Lee-Ki-poong.dds" 
+				small = "gfx/leaders/ROK/Minister-Lee-Ki-poong.dds"
+			} 
+		}
+		country_leader = {
+			desc = "POLITICS_LKP_DESC"
+			ideology = conservative_democracy_paternalistic_conservatism_subtype
+			traits = {  }
+			expire = "1999.1.1.1"
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = ROK_LKP_hog
+			allowed = { original_tag = ROK }
+			traits = {
+				head_of_government
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	ROK_KDY = {
+		name = ROK_KDY
+		portraits = { 
+			civilian = { 
+				large = "gfx/leaders/ROK/Kim-Do-yeon.dds"
+				small = "gfx/leaders/ROK/Minister-Kim-Do-yeon.dds"
+			}
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = ROK_KDY_eco
+			allowed = { original_tag = ROK }
+			traits = {
+				economy_minister
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	ROK_LBS = {
+		name = ROK_LBS
+		portraits = { 
+			civilian = { 
+				large = "gfx/leaders/ROK/Lee-Beom-seok.dds" 
+				small = "gfx/leaders/ROK/Minister-Lee-Beom-seok.dds"
+			} 
+		}
+		country_leader = {
+			desc = "POLITICS_LBS_DESC"
+			ideology = fascism_fascist_populism_subtype
+			traits = {  }
+			expire = "1999.1.1.1"
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = ROK_LBS_for
+			allowed = { original_tag = ROK }
+			traits = {
+				foreign_minister
+				for_ideological_crusader
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	ROK_RTW = {
+		name = ROK_RTW
+		portraits = { 
+			civilian = { 
+				large = "gfx/leaders/ROK/Roh-Tae-woo.dds" 
+				small = "gfx/leaders/ROK/Minister Roh-Tae-woo.dds"
+			} 
+		}
+		country_leader = {
+			desc = "POLITICS_RTW_DESC"
+			ideology = despotism_civilian_dictatorship_subtype
+			traits = {  }
+			expire = "1999.1.1.1"
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = ROK_RTW_sec
+			allowed = { original_tag = ROK }
+			traits = {
+				security_minister
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+}

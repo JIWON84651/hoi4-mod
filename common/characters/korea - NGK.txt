@@ -1,0 +1,12 @@
+characters = {
+	NGK_KYS = {
+		name = NGK_KYS
+		portraits = { civilian = { large = "gfx/leaders/NGK/Kim-Young-sam.dds" } }
+		country_leader = {
+			desc = "POLITICS_KYS_DESC"
+			ideology = authoritarian_democracy_provisional_government_subtype
+			traits = {  }
+			expire = "1999.1.1.1"
+		}
+	}
+}

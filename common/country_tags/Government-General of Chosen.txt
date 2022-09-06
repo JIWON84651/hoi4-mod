@@ -1,0 +1,1 @@
+JPK	= "countries/Government-General of Chosen.txt"
