@@ -1,0 +1,21 @@
+soundeffect = { # 下面调音我也不知道有什么用，建议原封不动
+
+    name = custom #同上show_sound
+
+    loop = no
+
+    sounds = {
+
+        sound = custom_sound  #和上面变量名相同
+
+        }
+
+    is3d = no 
+
+    max_audible = 1
+
+    max_audible_behaviour = fail 
+
+    volume = 1.5
+
+}

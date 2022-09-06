@@ -1,0 +1,9 @@
+sound = {
+
+	name = "custom_sound"  #和上面gui的show_sound相同
+
+	file = "customsound/tno_se_custom.wav"   #音频文件的名字
+
+	always_load = no
+
+}
