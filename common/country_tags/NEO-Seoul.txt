@@ -1,1 +1,0 @@
-NEO	= "countries/NEO-Seoul.txt"

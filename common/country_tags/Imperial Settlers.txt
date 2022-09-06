@@ -1,1 +1,0 @@
-GIS	= "countries/Imperial Settlers.txt"

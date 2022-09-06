@@ -1,1 +1,0 @@
-KPA	= "countries/Korean Peoples Army.txt"
